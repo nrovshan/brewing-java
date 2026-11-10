@@ -12,8 +12,18 @@ public class typeCasting {
         System.out.println("Code for char:" + sum2);
     }
 
+    public static void expCasting() {
+
+        long longNum = 10_000_000L;
+
+        short shortNum = (short) longNum;
+        System.out.println("apply explicit converting:" + ((Object)shortNum).getClass().getSimpleName());
+        System.out.println("look full class name:" + ((Object)shortNum).getClass().getName());
+    }
+
     public static void main(String[] args){
         intCharDiff();
+        expCasting();
     }
 
 }
