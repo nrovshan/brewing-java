@@ -15,6 +15,10 @@ public class wrapperClasses {
         System.out.println("Null value:" + missingValue);
     }
 
+    public static void test()  {
+        int n = 100;
+    }
+
     public static void main(String[] args) {
         basics();
     }
