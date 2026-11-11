@@ -16,11 +16,17 @@ public class wrapperClasses {
     }
 
     public static void test()  {
-        int n = 100;
-        char l = 'A';
+        int maxInt = Integer.MAX_VALUE;
+        int minInt = Integer.MIN_VALUE;
+        double maxDouble = Double.MAX_VALUE;
+
+        System.out.println("Maximum int capacity: " + maxInt);
+        System.out.println("Minimum int capacity: " + minInt);
+        System.out.println("Maximum double capacity: " + maxDouble);
     }
 
     public static void main(String[] args) {
         basics();
+        test();
     }
 }
