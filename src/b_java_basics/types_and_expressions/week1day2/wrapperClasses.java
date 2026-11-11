@@ -17,6 +17,7 @@ public class wrapperClasses {
 
     public static void test()  {
         int n = 100;
+        char l = 'A';
     }
 
     public static void main(String[] args) {
