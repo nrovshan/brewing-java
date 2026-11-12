@@ -25,6 +25,21 @@ public class wrapperClasses {
         System.out.println("Maximum double capacity: " + maxDouble);
     }
 
+    public static void conversion() {
+        //rule 1: unboxing does not wide directly
+        Integer intObj = 12;
+        double intObjtwo = intObj;  // unboxes 12 to int, then convert to double 12.0
+
+        //rule 2: widening + boxing error
+        //Long longObj = 12; //error --> because 12 is int, not long. we should define it as long
+        Long longObj = 12L;
+
+        //rule 3: unboxing + narrowing error
+        // byte byteObj = intObj --> error it does not narrow directly to byte
+        byte byteObj = (byte) (int) intObj;
+
+    }
+
     public static void main(String[] args) {
         basics();
         test();
