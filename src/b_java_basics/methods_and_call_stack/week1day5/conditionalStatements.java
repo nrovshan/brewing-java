@@ -2,9 +2,10 @@ package b_java_basics.methods_and_call_stack.week1day5;
 
 public class conditionalStatements {
 
-    public static void main(String[] args) {
-//        Integer var1 = (Integer) 15;
+    public static void ifStatements() {
+        Integer var1 = (Integer) 15;
         Object var1 = 15;
+
         System.out.println(var1.getClass().getSimpleName());
 
         if (var1.getClass().getSimpleName().equals("Integer")) {
@@ -20,6 +21,11 @@ public class conditionalStatements {
         } else {
             System.out.println(var1.getClass().getSimpleName());
         }
+    }
+
+    public static void main(String[] args) {
+        ifStatements();
+
         }
     }
 
