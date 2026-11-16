@@ -39,11 +39,28 @@ public class iteratives {
         } while (!parol.equals("1234"));
 
         System.out.println("Accepted!");
-        scanner.close();
+        //scanner.close();
     }
+
+    public static void anotherDoWhile() {
+
+        Scanner startPoint = new Scanner(System.in);
+        int secretDigit = 7;
+
+        do {
+            System.out.println("write correct secret:");
+            secretDigit = startPoint.nextInt();
+        } while (secretDigit != 7);
+
+        System.out.println("Authentication is correct!");
+        startPoint.close();
+
+    }
+
 
     public static void main(String[] args) {
         whileLoop();
         doWhileLoop();
+        anotherDoWhile();
     }
 }
