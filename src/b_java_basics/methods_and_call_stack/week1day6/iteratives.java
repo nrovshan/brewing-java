@@ -57,10 +57,18 @@ public class iteratives {
 
     }
 
+    public static void forLoop() {
+        //init; condition; update
+
+        for (int y=0; y<5; y++) {
+            System.out.println("result: " + y);
+        }
+    }
 
     public static void main(String[] args) {
         whileLoop();
         doWhileLoop();
         anotherDoWhile();
+        forLoop();
     }
 }
