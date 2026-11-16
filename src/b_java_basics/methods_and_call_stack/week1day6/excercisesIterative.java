@@ -7,14 +7,23 @@ public class excercisesIterative {
     public static void numberPatternAnalyzer() {
         Scanner start = new Scanner(System.in);
         int i = 0;
-        String input;
+        int sum = 0;
+        String input = start.nextLine();
 
-        input = start.nextLine();
+        //System.out.println(input.length());
 
-        System.out.println(input.length());
+        while (i < input.length()){
+            char ch = input.charAt(i);
+            int digit = Character.getNumericValue(ch);
+
+            sum = sum + digit;
+            //System.out.println(ch);
+            i++;
+        }
+
+        System.out.println("Sum: " + sum);
 
         start.close();
-        //while (i < input.size())
 
     }
 
