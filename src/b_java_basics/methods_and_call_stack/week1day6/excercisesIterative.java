@@ -8,8 +8,8 @@ public class excercisesIterative {
         Scanner start = new Scanner(System.in);
         int i = 0;
         int sum = 0;
-        int evenCounts = 0;
-        int oddCounts = 0;
+        int evenCount = 0;
+        int oddCount = 0;
         int maxDigit = 0;
         int minDigit = 9;
 
@@ -26,9 +26,9 @@ public class excercisesIterative {
             //System.out.println(ch);
 
             if (digit % 2 == 0) {
-                evenCounts += 1;
+                evenCount += 1;
             } else {
-                oddCounts += 1;
+                oddCount += 1;
             }
 
             if (digit > maxDigit) {
@@ -44,8 +44,8 @@ public class excercisesIterative {
         }
 
         System.out.println("Sum: " + sum);
-        System.out.println("Even digits: " + evenCounts);
-        System.out.println("Odd digits: " + oddCounts);
+        System.out.println("Even digits: " + evenCount);
+        System.out.println("Odd digits: " + oddCount);
         System.out.println("Largest digits: " + maxDigit);
         System.out.println("Smallest digits: " + minDigit);
 
@@ -55,7 +55,9 @@ public class excercisesIterative {
     }
 
     public static void main(String[] args) {
+
         numberPatternAnalyzer();
+
     }
 
 }
