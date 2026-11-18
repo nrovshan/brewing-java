@@ -10,6 +10,8 @@ public class excercisesIterative {
         int sum = 0;
         int evenCounts = 0;
         int oddCounts = 0;
+        int maxDigit = 0;
+        int minDigit = 9;
 
         String input = start.nextLine();
 
@@ -19,7 +21,6 @@ public class excercisesIterative {
             char ch = input.charAt(i);
             int digit = Character.getNumericValue(ch);
 
-            int maxDigit = digit[0];
 
             sum = sum + digit;
             //System.out.println(ch);
@@ -30,12 +31,24 @@ public class excercisesIterative {
                 oddCounts += 1;
             }
 
+            if (digit > maxDigit) {
+                maxDigit =  digit;
+            } else { }
+
+            if (digit < minDigit) {
+                minDigit = digit;
+            } else { }
+
             i++;
+            //System.out.println("digits " + digit);
         }
 
         System.out.println("Sum: " + sum);
         System.out.println("Even digits: " + evenCounts);
         System.out.println("Odd digits: " + oddCounts);
+        System.out.println("Largest digits: " + maxDigit);
+        System.out.println("Smallest digits: " + minDigit);
+
 
         start.close();
 
