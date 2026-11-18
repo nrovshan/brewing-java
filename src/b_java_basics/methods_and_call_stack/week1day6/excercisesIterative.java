@@ -21,7 +21,6 @@ public class excercisesIterative {
             char ch = input.charAt(i);
             int digit = Character.getNumericValue(ch);
 
-
             sum = sum + digit;
             //System.out.println(ch);
 
@@ -54,9 +53,22 @@ public class excercisesIterative {
 
     }
 
+    public static void monthlyExpenseTracker() {
+        Scanner start2 = new Scanner(System.in);
+
+        System.out.println("Monthly budget: ");
+        double budget = start2.nextDouble();
+
+        do{
+            System.out.println("Monthly budget: " + start2);
+            start2.nextDouble();
+        } while {}
+    }
+
     public static void main(String[] args) {
 
         numberPatternAnalyzer();
+        monthlyExpenseTracker();
 
     }
 
