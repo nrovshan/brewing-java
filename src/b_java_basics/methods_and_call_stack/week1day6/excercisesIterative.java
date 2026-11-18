@@ -49,8 +49,6 @@ public class excercisesIterative {
         System.out.println("Smallest digits: " + minDigit);
 
 
-        start.close();
-
     }
 
     public static void monthlyExpenseTracker() {
@@ -58,11 +56,46 @@ public class excercisesIterative {
 
         System.out.println("Monthly budget: ");
         double budget = start2.nextDouble();
+        double totalSpent = 0;
+        int count = 0;
+        double maxExpense = 0;
+        double minExpense = Double.MAX_VALUE;
+        String choice;
 
         do{
-            System.out.println("Monthly budget: " + start2);
-            start2.nextDouble();
-        } while {}
+            System.out.println("Expense: ");
+            double expense = start2.nextDouble();
+            totalSpent += expense;
+            count++;
+
+            if (expense > maxExpense) {
+                maxExpense = expense;
+            }
+
+            if (expense < minExpense) {
+                minExpense = expense;
+            }
+
+            double remainingBudget = budget - totalSpent;
+
+            System.out.println("Total spent:: " + totalSpent);
+            System.out.println("Remaining budget: " + remainingBudget);
+
+
+            System.out.println("wanna enter another expense yes/no: ");
+            choice = start2.next();
+
+        } while (choice.equalsIgnoreCase("yes"));
+
+        double avgExpenses = totalSpent / count;
+
+        System.out.println("Total spent:: " + totalSpent);
+        System.out.println("Number of expenses: " + count);
+        System.out.println("Average expenses: " + avgExpenses);
+        System.out.println("Largest expenses: " + maxExpense);
+        System.out.println("Smallest expenses: " + minExpense);
+
+        start2.close();
     }
 
     public static void main(String[] args) {
